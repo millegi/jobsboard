@@ -1,0 +1,312 @@
+body {
+  font-family: "Raleway", sans-serif; }
+  body br {
+    display: block;
+    margin: 3em 0;
+    content: " "; }
+
+.border {
+  height: 6px;
+  border: 0;
+  background-color: #fd7473;
+  background-image: linear-gradient(to right, #fd7473, #fd7473 25%, #f3c951 25%, #f3c951 50%, #47b8e0 50%, #47b8e0 75%, #9f68d0 75%, #9f68d0 100%, #9f68d0 100%);
+  -webkit-background-size: 50% 100%;
+  -moz-background-size: 50% 100%;
+  background-size: 50% 100%; }
+
+.wrapper {
+  width: 750px;
+  max-width: 90%;
+  margin: 0 auto; }
+
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.main_header {
+  margin: 5em 0 3em 0; }
+
+.logo img {
+  width: 75px;
+  float: left;
+  margin-top: -1em; }
+
+.logo h1 {
+  float: left;
+  margin: 0 0 0 1em;
+  text-transform: uppercase;
+  font-size: 1.35em;
+  padding-top: 1.1em;
+  color: #34314c; }
+  .logo h1 span {
+    font-weight: 400; }
+
+.menu {
+  display: none; }
+
+.main_nav {
+  float: right;
+  padding-top: 1.75em; }
+  .main_nav a {
+    text-decoration: none;
+    margin-left: 1em;
+    color: #9592ad; }
+  .main_nav .current {
+    font-weight: 700;
+    color: #34314c; }
+
+#timeline {
+  width: 100%;
+  position: relative;
+  list-style: none;
+  padding: 0; }
+  #timeline:after {
+    content: " ";
+    width: 1px;
+    background: 1px #d9dee9;
+    height: 90%;
+    position: absolute;
+    top: 3em;
+    left: 3em;
+    z-index: 0; }
+  #timeline a {
+    text-decoration: none; }
+  #timeline .listing {
+    background: #FFFFFF;
+    border: 1px solid #d9dee9;
+    border-radius: .3em;
+    padding: 1em;
+    margin-bottom: 1em;
+    position: relative;
+    z-index: 1;
+    display: table;
+    width: 96%;
+    transition: all .3s ease-in-out; }
+    #timeline .listing img, #timeline .listing .info, #timeline .listing .job_type {
+      display: table-cell;
+      vertical-align: middle;
+      font-size: .9em;
+      color: #9592ad; }
+    #timeline .listing .image_wrapper {
+      width: 60px; }
+      #timeline .listing .image_wrapper img {
+        width: 60px;
+        display: block;
+        margin: 0 auto;
+        border-radius: .25em; }
+    #timeline .listing .info {
+      line-height: 1.25em;
+      width: 640px;
+      padding-left: 25px; }
+      #timeline .listing .info .job_title {
+        font-weight: 700;
+        color: #34314c;
+        font-size: 1.5em; }
+      #timeline .listing .info .job_info {
+        color: #9592ad;
+        display: block; }
+        #timeline .listing .info .job_info span {
+          margin: 0 .75em; }
+    #timeline .listing .job_type {
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: .75em;
+      position: relative;
+      white-space: nowrap;
+      padding-top: .6em;
+      width: 100px; }
+      #timeline .listing .job_type:before {
+        content: " ";
+        background-color: #fd7473;
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        position: absolute;
+        left: -20px;
+        top: 27px; }
+    #timeline .listing .full_time {
+      color: #fd7473; }
+      #timeline .listing .full_time:before {
+        background: #fd7473; }
+    #timeline .listing .part_time {
+      color: #f3c951; }
+      #timeline .listing .part_time:before {
+        background: #f3c951; }
+    #timeline .listing .freelance {
+      color: #47b8e0; }
+      #timeline .listing .freelance:before {
+        background: #47b8e0; }
+    #timeline .listing .contract {
+      color: #9f68d0; }
+      #timeline .listing .contract:before {
+        background: #9f68d0; }
+    #timeline .listing:hover {
+      cursor: pointer;
+      box-shadow: 0px 2px 40px 0 rgba(0, 0, 0, 0.1); }
+  #timeline .date {
+    display: inline-block;
+    padding: 1em 0;
+    width: 100px;
+    background: #FFFFFF;
+    border: 1px solid #timeline .date border;
+    border-radius: 3em;
+    font-size: .8em;
+    font-weight: 700;
+    text-align: center;
+    z-index: 2;
+    position: relative;
+    margin: 1em 0 2em 0; }
+  #timeline .accordion {
+    cursor: pointer;
+    transition: 0.4s; }
+  #timeline .panel {
+    display: none;
+    background: #FFFFFF;
+    border: 1px solid #d9dee9;
+    border-radius: .3em;
+    padding: 1em;
+    margin-bottom: 1em;
+    position: relative;
+    z-index: 1; }
+    #timeline .panel h3 {
+      color: #9592ad;
+      font-weight: 700; }
+    #timeline .panel b {
+      font-weight: 550; }
+    #timeline .panel p {
+      color: #9592ad; }
+    #timeline .panel .apply {
+      border: 1px solid #d9dee9;
+      border-radius: .3em;
+      padding: .8em;
+      margin: 3em 0 1em 0;
+      background-color: #FFFFFF;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #34314c;
+      font-weight: 700;
+      margin-left: 42.25%; }
+      #timeline .panel .apply a {
+        color: #34314c;
+        text-decoration: none; }
+      #timeline .panel .apply:hover {
+        color: #FFFFFF;
+        background-color: #47b8e0; }
+
+.pagination:before, .pagination:after {
+  content: " ";
+  display: table; }
+
+.pagination:after {
+  clear: both; }
+
+.pagination {
+  text-align: center;
+  margin: 4em 0 5em 0; }
+  .pagination a, .pagination .previous_page, .pagination .current, .pagination .next_page {
+    padding: 0.75em 1em;
+    margin: 0 .25em;
+    border-radius: .15em;
+    line-height: 1.25em;
+    text-decoration: none;
+    background: #EDEFF5;
+    font-weight: 700;
+    font-size: .7em;
+    font-style: normal;
+    color: #34314c; }
+    .pagination a:hover, .pagination .previous_page:hover, .pagination .current:hover, .pagination .next_page:hover {
+      background: #47b8e0;
+      color: #FFFFFF; }
+  .pagination .current {
+    background: #47b8e0;
+    color: #FFFFFF; }
+  .pagination .disabled {
+    color: #C0C0C0; }
+    .pagination .disabled:hover {
+      color: #C0C0C0;
+      background: #EDEFF5; }
+
+#main_footer {
+  padding: 1.5em 5%;
+  border-top: 1px solid #d9dee9; }
+  #main_footer .copyright {
+    float: left;
+    font-size: .9em;
+    margin: 0; }
+  #main_footer nav {
+    float: right; }
+    #main_footer nav i {
+      color: #34314c;
+      margin-left: 1em;
+      padding-top: .2em; }
+      #main_footer nav i:hover {
+        color: #47b8e0; }
+
+@media only screen and (max-width: 768px) {
+  .main_header {
+    margin: 3em 0; }
+  .logo {
+    display: block;
+    margin: 0 auto;
+    text-align: center; }
+    .logo img {
+      float: none; }
+    .logo h1 {
+      float: none;
+      margin: 0;
+      font-size: 1.1em; }
+  .main_nav {
+    float: none;
+    text-align: center; }
+    .main_nav a {
+      margin: 0 .5em; } }
+
+@media only screen and (max-width: 600px) {
+  .main_nav {
+    display: none; }
+  .main_nav.active {
+    display: block;
+    width: 100%; }
+    .main_nav.active a {
+      display: block;
+      text-decoration: none;
+      margin-left: 1em;
+      margin-top: 4em;
+      color: #9592ad;
+      border-bottom: 1px solid #d9dee9; }
+      .main_nav.active a:last-child {
+        border-bottom: none; }
+    .main_nav.active .current {
+      font-weight: 300;
+      color: #9592ad; }
+  .menu {
+    display: block;
+    float: right; }
+    .menu i {
+      font-size: 1.5em;
+      color: #34314c;
+      padding-top: .6em; }
+  .logo {
+    display: block;
+    margin: 0 auto;
+    text-align: center; }
+    .logo img {
+      float: left; }
+    .logo h1 {
+      float: left;
+      margin: 0;
+      font-size: 1.1em; }
+  #timeline .listing .image_wrapper {
+    margin-right: 1em; }
+    #timeline .listing .image_wrapper img {
+      width: 50px; }
+  #timeline .listing .info {
+    width: 100%;
+    padding: .4em 0 0 0; }
+    #timeline .listing .info .job_title {
+      font-size: 1.25em; }
+  #timeline .listing .job_type {
+    display: none; } }
